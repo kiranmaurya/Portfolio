@@ -6,6 +6,7 @@ console.log("This is my index js file");
 1. ON CLICK ON NEWS OPEN NEW TAB WITH ORIGINAL ARTICAL PAGE
 2. fetch original date form api given date and add this on web page
 3. add beauty and responsiveness to news page
+4. integrate free api
 */
 // Initialize the news api parameters
 let source = 'the-times-of-india';
