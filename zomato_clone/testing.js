@@ -12,13 +12,13 @@ console.log("This is my index js file");
 let source = 'us, in';
 
 let apiKey = '465d049e737be266180baef869fb9d12'
-
+let limit = 9;
 // Grab the news container
 let newsAccordion = document.getElementById('news');
 
 // Create an ajax get request
 const xhr = new XMLHttpRequest();
-xhr.open('GET', `http://api.mediastack.com/v1/news?access_key=${apiKey}&countries=${source}`, true);
+xhr.open('GET', `https://api.mediastack.com/v1/news?access_key=${apiKey}&countries=${source}&limit=${limit}`, true);
 
 
 // What to do when response is ready
