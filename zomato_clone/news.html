@@ -25,3 +25,12 @@
 		
 	</div>
 </section>
+<script>
+	var input = document.getElementById("searchQueryInput");
+	input.addEventListener("keydown", function (e) {
+		if (e.key === "Enter") {  
+			fetchNews();
+		}
+	});
+
+</script>
