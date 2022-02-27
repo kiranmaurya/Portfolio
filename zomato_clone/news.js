@@ -1,5 +1,13 @@
 
+/*
+1. ADD LODDING ICON
+2. RESPONSIVENESS ADD
+3. PAGGINATION ADDED
+4. ON NEWS CLICK OPEN ORIGINAL NEWS ARTICEL
+*/
+
 // Grab the news container
+
 let newsAccordion = document.getElementById('news');
 
 // Create an ajax get request
