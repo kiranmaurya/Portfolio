@@ -43,7 +43,7 @@ function fetchNews() {
                         image = element["media"];
                     }
                     //document.write("The current month is " + monthNames[d.getMonth()]);
-                    let news = `<div class="ct-blog col-sm-6 col-md-4">
+                    let news = `<div class="ct-blog col-sm-6 col-md-4" onClick="window.open('${element["link"]}','_newtab')">
                                     <div class="inner">
                                     <div class="fauxcrop">
                                         <a href="#"><img alt="News Entry" src="${image}"></a>
