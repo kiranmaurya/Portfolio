@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+html { scroll-behavior: smooth; }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-}
+} 
 a{
     text-decoration: none;
 }
@@ -129,7 +130,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-between;
     list-style-type: none;
-    padding-left: 0px;
+    padding-top: 40px;
   }
   .skills li {
     background-color: #fd4766;
@@ -149,35 +150,50 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-between;
     list-style-type: none;
-    padding-left: 0px;
+    padding-top: 50px;
   }
   .work i {
     background-color: #fd4766;
     box-shadow: 20px 20px 1px 2px rgb(151, 217, 231);
     color:#fff;
-    font-size: 35px;
-    margin: 30px;
-    padding: 20px;
+    font-size: 25px;
+    margin: 25px;
+    padding: 10px;
     text-align: center;
   }
   .work i:hover{
     background-color: rgb(14, 167, 201);
   }
-footer{
-    background-color: #fd4766;
-    margin: 0px;
-    padding: 10px;
-}
-.social a{
-    color: #fff;
-}
-.social img {
-    height: 100px;
-    width: 100px;
+  .backtotop img{
+    height: 50px;
+    width: 50px;
     margin-left: 7px;
     margin-right: 7px;
   }
-  
+  .backtotop{
+    text-align: right;
+    margin-right: 100px;
+  }
+  .backtotop {  
+    animation-name: backtotop;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+@keyframes backtotop {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+  /* footer */
+.social img {
+    height: 50px;
+    width: 50px;
+    margin-left: 7px;
+    margin-right: 7px;
+  }
 .social a {
     text-decoration: none;
   }
@@ -185,7 +201,8 @@ footer{
     opacity: 0.8;
   }
   .social {
-    text-align: center;
+    text-align: left;
+    margin-left: 100px;
   }
 .copyright {
     font-size: 8pt;
